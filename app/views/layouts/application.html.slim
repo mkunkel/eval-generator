@@ -1,0 +1,16 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+
+    title == content_for?(:title) ? yield(:title) : "Untitled"
+
+  = stylesheet_link_tag "application"
+  = javascript_include_tag "vendor/modernizr"
+  = csrf_meta_tag
+
+body
+  .container
+    == yield
+
+    = javascript_include_tag "application"

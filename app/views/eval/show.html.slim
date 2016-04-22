@@ -1,0 +1,5 @@
+= form_tag do
+  = render 'game'
+  - referees.each do |referee|
+      = render 'referee', referee: referee
+  button type='submit' Submit

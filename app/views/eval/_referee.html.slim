@@ -1,0 +1,16 @@
+.row
+  input id='referees[][position]' type='hidden' name='referees[]position' value=referee[:abbreviation]
+  .col-md-2
+    label = referee[:position]
+  .col-md-3
+    .form-group
+      label for='referees[][derby]' Derby Name
+      input.form-control id='referees[][derby]' name='referees[][derby]'
+  .col-md-3
+    .form-group
+      label for='referees[][legal]' Government Name
+      input.form-control id='referees[][legal]' name='referees[][legal]'
+  .col-md-4
+    .form-group
+      label for="#{referee[:field]}_email" Email Address
+      input.form-control id='referees[][email]' name='referees[][email]'

@@ -1,0 +1,37 @@
+.row.bg-info
+  .col-md-6
+    .form-group
+      p
+        strong Game/Evaluation Type (if tournament, check all that apply)
+      .checkbox-inline
+        input#sanctionedchk name='sanctioned' type='checkbox' Sanctioned/SFC
+      .checkbox-inline
+        input#regulationchk name='regulation' type='checkbox' Regulation/Mock Sanctioned
+      .checkbox-inline
+        input#otherchk name='other' type='checkbox' Home/Other (Feedback only)
+  .col-md-10
+    .form-group
+      label for=:teams Competing Teams and Approximate Ranking at Game
+      input.form-control#teams name='teams'
+.row.bg-info
+  .col-md-2
+    .form-group
+      label for=:date Date of Game
+      input.form-control#date name='date'
+  .col-md-6
+    .form-group
+      label for=:heads Head Officials
+      input.form-control#heads name='head-officials'
+.row.bg-warning
+  .col-md-4
+    .form-group
+      label for=:tournament Tournament Name (if applicable)
+      input.form-control#tournament name='tournament'
+  .col-md-3
+    .form-group
+      label for=:score Game Score (if applicable)
+      input.form-control#score name='score'
+  .col-md-3
+    .form-group
+      label for=:penalties Number of Penalties (if applicable)
+      input.form-control#penalties name='penalties'
