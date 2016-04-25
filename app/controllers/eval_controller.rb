@@ -1,11 +1,11 @@
+require 'eval_writer'
 class EvalController < ApplicationController
   def show
     render :show, locals: { referees: referees }
   end
 
   def create
-    require 'pry'
-    binding.pry
+    ::EvalWriter.new(nil, nil)
   end
 
   private
